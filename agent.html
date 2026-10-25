@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boomi Agent</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@boomi/embedkit-cdn/embedkit-cdn.css" />
+  <script>
+    window.BoomiEmbed = {
+      publicToken: "<your-public-token>",
+      agentId: "<your-agent-id>",
+      mountId: "boomi-agent",
+      serverBase: "https://api.boomi.space/api/v1"
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@boomi/embedkit-cdn/embedkit-cdn.umd.js" async></script>
+</head>
+<body>
+  <div id="boomi-agent"></div>
+</body>
+</html>
